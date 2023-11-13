@@ -8,7 +8,7 @@ import (
 
 func Contain(ourFile string, text string) (bool, error) {
 
-	file, err := os.ReadFile(ourFile) //, os.O_RDONLY, 0666)
+	file, err := os.ReadFile(ourFile)
 	if err != nil {
 		return false, fmt.Errorf("FILE DIDN`T EXIST!")
 	}
